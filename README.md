@@ -1,4 +1,8 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Boilerplate - NextJs + Typescript + Jest + Testing Library setup
+
+If you want to start a project using the basic setup, this is the right repository for you. Please feel free to share and contribute.
+
+--
 
 ## Getting Started
 
@@ -12,7 +16,46 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Basic NextJS files and directories structure
+
+```
+/app
+  \_ /.next/
+  \_ /components/
+      \_ Button/
+          \_ button.spec.tsx
+          \_ button.styles.tsx
+          \_ index.tsx
+  \_ /pages/
+      \_ _api
+      \_ _app.tsx
+      \_ index.jsx
+  \_ /public/
+      \_ favicon.ico
+      \_ header.png
+  \_ /redux/ => Or any other state management tool
+      \_ folders...
+  \_ /test/
+      \_ pages/
+        \_ index.test.tsx
+      \_ test-utils.js/
+  \_ /styles/
+        \_ global.css
+  \
+  \_ .babelrc
+  \_ .eslintrc
+  \_ .env
+  \_ babel.config.js
+  \_ jest.config.js
+  \_ jest.setup.js
+  \_ next.config.js
+  \_ tsconfig.json
+  \_ package.json
+  \_ README.md
+
+```
+
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file. You can also create your components at components folder.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
 
